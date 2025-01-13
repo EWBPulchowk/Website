@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "EWB Pulchowk",
   description: "EWB Pulchowk",
+  icons:["/logo.png"]
 };
 
 export default function RootLayout({
