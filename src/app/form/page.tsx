@@ -9,11 +9,11 @@ import { registrationQuestions,eventConfig } from "../data/userRegistration";
 
 export const metadata: Metadata = {
   ...rootMetadata,
-  title: `${eventConfig.title} | IT Club, Pulchowk`,
+  title: `${eventConfig.title} | EWB, Pulchowk`,
   description: eventConfig.description,
   openGraph: {
     ...rootMetadata.openGraph,
-    title: `${eventConfig.title} | IT Club, Pulchowk`,
+    title: `${eventConfig.title} | EWB, Pulchowk`,
     description: eventConfig.description,
     url: rootMetadata.metadataBase + "register-event",
   },

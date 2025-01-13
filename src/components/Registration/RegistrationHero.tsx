@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { EventRegistrationConfig } from '@/types/types';
+import { Phone } from 'lucide-react';
 
 export default function RegistrationHero({
   config,
@@ -37,7 +38,7 @@ export default function RegistrationHero({
             
             <div className="w-32 h-1 mx-auto mb-8 md:mx-0 bg-gradient-to-r from-secondary via-primary to-secondary" />
             
-            <p className="mb-6 text-lg text-softwhite/80 md:text-xl">
+            <p className="mb-10 text-lg text-softwhite/80 md:text-xl">
               {config.shortDescription}
             </p>
             
@@ -45,6 +46,18 @@ export default function RegistrationHero({
               <Button className="px-8 py-6 text-lg bg-black text-white hover:bg-black/90">
                 {config.date}
               </Button>
+                   {/* Contact Information */}
+                  {/* Phone Numbers */}
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3 p-3 transition-colors rounded-lg bg-white hover:bg-white/5">
+                      <Phone className="w-5 h-5 text-primary" />
+                      <div>
+                        <p className="text-sm text-softwhite/60">Prabesh Khatiwada</p>
+                        <p className="font-medium">986-4087262</p>
+                      </div>
+                    </div>
+                  
+                  </div>
              
             </div>
           </div>

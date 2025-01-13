@@ -15,7 +15,19 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "EWB Pulchowk",
   description: "EWB Pulchowk",
-  icons:["/logo.png"]
+  icons:{
+    icon:[
+      {
+        url:'/logo.ico',
+        sizes:'any',
+      },
+      {
+        url:'/logo.png',
+        sizes:'16x16',
+        type:'image/png'
+      }
+    ]
+  }
 };
 
 export default function RootLayout({
@@ -25,6 +37,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <link rel="favicon" href="/logo.png" sizes="any" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

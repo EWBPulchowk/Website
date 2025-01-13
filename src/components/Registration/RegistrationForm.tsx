@@ -8,7 +8,7 @@ import { RadioInput } from "./QuestionTypes/RadioInput";
 import { RegistrationSuccess } from "./RegistrationSuccess";
 import { OptionWithInput } from "./QuestionTypes/OptionWithInput";
 import { FormQuestion } from "@/types/types";
-import { baseQuestions, outreachQuestions, projectResearchQuestions, sponsorshipQuestions, technicalQuestions } from "@/app/data/userRegistration";
+import { baseQuestions, creativeQuestions, eventManagementQuestions, hrQuestions, outreachQuestions,  projectQuestions,  researchQuestions,  socialMediaQuestions,  sponsorshipQuestions, technicalQuestions } from "@/app/data/userRegistration";
 
 export default function RegistrationForm() {
   const [selectedPriority1Unit, setSelectedPriority1Unit] = useState<string | null>(null);
@@ -23,14 +23,25 @@ export default function RegistrationForm() {
   // Function to get unit-specific questions based on the unit selected
   const getUnitSpecificQuestions = (unit: string): FormQuestion[] => {
     switch (unit) {
-      case "Project and Research":
-        return projectResearchQuestions;
+      case "Project":
+        return projectQuestions;
       case "Technical":
         return technicalQuestions;
       case "Outreach":
         return outreachQuestions;
       case "Sponsorship":
         return sponsorshipQuestions;
+        case "HR":
+      return hrQuestions;
+    case "Creative":
+      return creativeQuestions;
+    case "Event Management":
+      return eventManagementQuestions;
+    case "Social Media and PR":
+      return socialMediaQuestions;
+    case "Research":
+      return researchQuestions;
+      
       default:
         return [];
     }
@@ -49,14 +60,30 @@ export default function RegistrationForm() {
         label: "Select Your 1st Priority Unit",
         type: "option",
         required: true, // 1st priority is required
-        options: ["Project and Research", "Technical", "Outreach", "Sponsorship"],
+        options: [ "Project",
+          "Research",
+          "Technical",
+          "Outreach",
+          "Sponsorship",
+          "HR",
+          "Creative",
+          "Event Management",
+          "Social Media and PR"],
       },
       {
         id: "priority2Unit",
         label: "Select Your 2nd Priority Unit (Optional)",
         type: "option",
         required: false, // 2nd priority is optional
-        options: ["Project and Research", "Technical", "Outreach", "Sponsorship"],
+        options: [ "Project",
+          "Research",
+          "Technical",
+          "Outreach",
+          "Sponsorship",
+          "HR",
+          "Creative",
+          "Event Management",
+          "Social Media and PR"],
       },
       ...unitSpecificQuestions1,
       ...unitSpecificQuestions2,
@@ -291,7 +318,15 @@ export default function RegistrationForm() {
                     required={true}
                     value={formData.priority1Unit || ""}
                     onChange={(value) => handleUnitChange("priority1", value as string)}
-                    options={["Project and Research", "Technical", "Outreach", "Sponsorship"]}
+                    options={[ "Project",
+                      "Research",
+                      "Technical",
+                      "Outreach",
+                      "Sponsorship",
+                      "HR",
+                      "Creative",
+                      "Event Management",
+                      "Social Media and PR"]}
                   />
                 ) : question.id === "priority2Unit" ? (
                   <RadioInput
@@ -299,7 +334,15 @@ export default function RegistrationForm() {
                     required={false}
                     value={formData.priority2Unit || ""}
                     onChange={(value) => handleUnitChange("priority2", value as string)}
-                    options={["Project and Research", "Technical", "Outreach", "Sponsorship"]}
+                    options={[ "Project",
+                      "Research",
+                      "Technical",
+                      "Outreach",
+                      "Sponsorship",
+                      "HR",
+                      "Creative",
+                      "Event Management",
+                      "Social Media and PR"]}
                   />
                 ) : (
                   renderQuestion(question)

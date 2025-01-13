@@ -22,11 +22,17 @@ function getGoogleClients() {
 }
 
 const SPREADSHEET_IDS = {
-  'Project and Research': process.env.PROJECT_RESEARCH_SHEET_ID,
-  'Outreach': process.env.OUTREACH_SHEET_ID,
+  'Project': process.env.PROJECT_SHEET_ID,
+  'Research': process.env.RESEARCH_SHEET_ID,
   'Technical': process.env.TECHNICAL_SHEET_ID,
-  'Sponsorship': process.env.SPONSORSHIP_SHEET_ID
-};
+  'Outreach': process.env.OUTREACH_SHEET_ID,
+  'Sponsorship': process.env.SPONSORSHIP_SHEET_ID,
+  'HR': process.env.HR_SHEET_ID,
+  'Creative': process.env.CREATIVE_SHEET_ID,
+  'Event Management': process.env.EVENT_MANAGEMENT_SHEET_ID,
+  'Social Media and PR': process.env.SOCIAL_MEDIA_SHEET_ID
+} as const;
+
 export async function POST(request: Request) {
   try {
     const [formData, sheetsClient] = await Promise.all([
