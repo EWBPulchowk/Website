@@ -8,7 +8,7 @@ import { RadioInput } from "./QuestionTypes/RadioInput";
 import { RegistrationSuccess } from "./RegistrationSuccess";
 import { OptionWithInput } from "./QuestionTypes/OptionWithInput";
 import { FormQuestion } from "@/types/types";
-import { baseQuestions, creativeQuestions, eventManagementQuestions, hrQuestions, outreachQuestions,  projectQuestions,  researchQuestions,  socialMediaQuestions,  sponsorshipQuestions, technicalQuestions } from "@/app/data/userRegistration";
+import { baseQuestions, creativeQuestions, eventManagementQuestions, hrQuestions, outreachQuestions,  projectQuestions,   socialMediaQuestions,  sponsorshipQuestions, technicalQuestions } from "@/app/data/userRegistration";
 
 export default function RegistrationForm() {
   const [selectedPriority1Unit, setSelectedPriority1Unit] = useState<string | null>(null);
@@ -23,7 +23,7 @@ export default function RegistrationForm() {
   // Function to get unit-specific questions based on the unit selected
   const getUnitSpecificQuestions = (unit: string): FormQuestion[] => {
     switch (unit) {
-      case "Project":
+      case "Project and Research":
         return projectQuestions;
       case "Technical":
         return technicalQuestions;
@@ -39,8 +39,6 @@ export default function RegistrationForm() {
       return eventManagementQuestions;
     case "Social Media and PR":
       return socialMediaQuestions;
-    case "Research":
-      return researchQuestions;
       
       default:
         return [];
@@ -60,8 +58,8 @@ export default function RegistrationForm() {
         label: "Select Your 1st Priority Unit",
         type: "option",
         required: true, // 1st priority is required
-        options: [ "Project",
-          "Research",
+        options: [ "Project and Research",
+        
           "Technical",
           "Outreach",
           "Sponsorship",
@@ -75,7 +73,7 @@ export default function RegistrationForm() {
         label: "Select Your 2nd Priority Unit (Optional)",
         type: "option",
         required: false, // 2nd priority is optional
-        options: [ "Project",
+        options: [ "Project and Research",
           "Research",
           "Technical",
           "Outreach",
@@ -318,8 +316,7 @@ export default function RegistrationForm() {
                     required={true}
                     value={formData.priority1Unit || ""}
                     onChange={(value) => handleUnitChange("priority1", value as string)}
-                    options={[ "Project",
-                      "Research",
+                    options={[ "Project and Research",
                       "Technical",
                       "Outreach",
                       "Sponsorship",
@@ -334,8 +331,7 @@ export default function RegistrationForm() {
                     required={false}
                     value={formData.priority2Unit || ""}
                     onChange={(value) => handleUnitChange("priority2", value as string)}
-                    options={[ "Project",
-                      "Research",
+                    options={[ "Project and Research",
                       "Technical",
                       "Outreach",
                       "Sponsorship",

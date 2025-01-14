@@ -22,8 +22,7 @@ function getGoogleClients() {
 }
 
 const SPREADSHEET_IDS = {
-  'Project': process.env.PROJECT_SHEET_ID,
-  'Research': process.env.RESEARCH_SHEET_ID,
+  'Project and Research': process.env.PROJECT_SHEET_ID,
   'Technical': process.env.TECHNICAL_SHEET_ID,
   'Outreach': process.env.OUTREACH_SHEET_ID,
   'Sponsorship': process.env.SPONSORSHIP_SHEET_ID,

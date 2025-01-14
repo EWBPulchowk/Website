@@ -41,25 +41,16 @@ export const baseQuestions: FormQuestion[] = [
 ];
 // ... existing imports and eventConfig ...
 
-// Split Project and Research into separate units
+// ... other imports and questions ...
+
 export const projectQuestions: FormQuestion[] = [
   {
-    id: "projectSkills",
-    label: "In this tenure, EWB Pulchowk's Project Unit plans to initiate impactful social and academic projects. What are the major skill sets you're familiar with today? Your skill set could involve programming, creative design, engineering Simulation and Modeling, Machine Learning and Generative AI, etc. In 7-10 sentences, describe your specialty, and if possible, kindly mention 1-2 projects where you've implemented those skills.",
+    id: "skillSet",
+    label: "In this tenure, EWB Pulchowk's Research and Project Unit plans to initiate impactful social and academic projects. What are the major skill sets you're familiar with today? Your skill set could involve programming, creative design, engineering Simulation and Modeling, Machine Learning and Generative AI, etc. In 7-10 sentences, describe your specialty, and if possible, kindly mention 1-2 projects where you've implemented those skills.",
     type: "textarea",
     required: true,
     maxLength: 2000
   },
-  {
-    id: "academicInterest",
-    label: "You might also have a subject/engineering sub-field that you enjoy better than others and have slightly better command. In which core subject are you particularly interested and how does this field of study correlate with your current skill set? We ask this in order to assign you to the project that suits your interests/academic inclinations. Write in no more than 6 sentences.",
-    type: "textarea",
-    required: true,
-    maxLength: 1000
-  }
-];
-
-export const researchQuestions: FormQuestion[] = [
   {
     id: "researchChallenges",
     label: "You might have previously thought of initiating a major research work. What challenges did you face during the course of your work (if any) and how did you tackle them? In 7-9 sentences, explain. If not, then how do you plan to initiate your research work in the upcoming days?",
@@ -69,12 +60,14 @@ export const researchQuestions: FormQuestion[] = [
   },
   {
     id: "academicInterest",
-    label: "You might also have a subject/engineering sub-field that you enjoy better than others and have slightly better command. In which core subject are you particularly interested and how does this field of study correlate with your current skill set? We ask this in order to assign you to the project that suits your interests/academic inclinations. Write in no more than 6 sentences.",
+    label: "\"Academic Research can be a lot easier if the aspiring researcher has a strong command over the fundamentals of the research subject.\" You might also have a subject/engineering sub-field that you enjoy better than others and have slightly better command. In which core subject are you particularly interested and how does this field of study correlate with your current skill set? We ask this in order to assign you to the project that suits your interests/academic inclinations. Write in no more than 6 sentences.",
     type: "textarea",
     required: true,
     maxLength: 1000
   }
 ];
+
+// Remove researchQuestions as it's now combined with projectQuestions
 
 export const hrQuestions: FormQuestion[] = [
   {
