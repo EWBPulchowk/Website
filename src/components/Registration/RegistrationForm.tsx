@@ -70,9 +70,9 @@ export default function RegistrationForm() {
       },
       {
         id: "priority2Unit",
-        label: "Select Your 2nd Priority Unit (Optional)",
+        label: "Select Your 2nd Priority Unit",
         type: "option",
-        required: false, // 2nd priority is optional
+        required:true, // 2nd priority is optional
         options: [ "Project and Research",
           "Research",
           "Technical",
@@ -97,11 +97,7 @@ export default function RegistrationForm() {
       }
       setSelectedPriority1Unit(value);
     } else {
-      // If 2nd priority is double-clicked, reset it
-      if (value === selectedPriority2Unit) {
-        setSelectedPriority2Unit(null); // Reset 2nd priority
-        return;
-      }
+   
       // Prevent selecting the same unit as priority 1
       if (value === selectedPriority1Unit) {
         alert("You cannot select the same unit for both priorities.");
@@ -328,7 +324,7 @@ export default function RegistrationForm() {
                 ) : question.id === "priority2Unit" ? (
                   <RadioInput
                     id="priority2Unit"
-                    required={false}
+                    required={true}
                     value={formData.priority2Unit || ""}
                     onChange={(value) => handleUnitChange("priority2", value as string)}
                     options={[ "Project and Research",
