@@ -23,7 +23,8 @@ export default function RegistrationHero({
           <div className="flex-1 text-center md:text-left">
             <div className="relative mb-6">
               {/* Logo positioning */}
-              <div className="absolute -top-32 scale-150 right-0 md:right-[-120px] w-24 h-24 md:w-32 md:h-32">
+              <div className="absolute -top-24 md:-top-32 scale-150 right-4 md:right-[-120px] w-24 h-24 md:w-32 md:h-32">
+
                 <img
                   src="/alt-logo.png"
                   alt="EWB Logo"

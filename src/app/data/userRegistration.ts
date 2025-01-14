@@ -6,7 +6,7 @@ export const eventConfig: EventRegistrationConfig = {
     "Join Engineers Without Borders and make a difference through sustainable engineering solutions!",
   description:
     "Be part of a global movement of engineers working to empower communities through sustainable projects. As a member of Engineers Without Borders, you'll have opportunities to participate in local and international projects, network with experienced professionals, and develop valuable skills while making a positive impact. Our members work on projects ranging from water systems and renewable energy to infrastructure development in communities worldwide.",
-  date: "Upto January 31st, 2025"
+  date: "Upto January 18, 2025"
 };
 // Base questions that apply to all registrations
 export const baseQuestions: FormQuestion[] = [
