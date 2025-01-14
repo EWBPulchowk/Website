@@ -72,7 +72,7 @@ export default function RegistrationForm() {
         id: "priority2Unit",
         label: "Select Your 2nd Priority Unit",
         type: "option",
-        required:true, // 2nd priority is optional
+        required:true, 
         options: [ "Project and Research",
           "Research",
           "Technical",
