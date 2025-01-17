@@ -191,20 +191,7 @@ export const outreachQuestions: FormQuestion[] = [
     required: true,
     maxLength: 1500
   },
-  {
-    id: "outreachSkills",
-    label: "What communication and social media skills can you bring to the outreach team?",
-    type: "textarea",
-    required: true,
-    maxLength: 1000
-  },
-  {
-    id: "contentCreation",
-    label: "Do you have experience in content creation (graphics, videos, writing)? Please describe.",
-    type: "textarea",
-    required: true,
-    maxLength: 1000
-  }
+ 
 ];
 
 export const sponsorshipQuestions: FormQuestion[] = [
