@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Lato } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+import SmoothScrolling from "@/components/SmoothScroll";
+import Image from "next/image";
+import Logo from "@/public/EWB Logo.svg";
+import { Icons } from "@/components/icons";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const lato = Lato({
+  variable: "--font-lato",
+  weight: ["100", "300", "400", "700", "900"],
 });
 
 export const metadata: Metadata = {
@@ -24,10 +24,55 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={cn(lato.className, "antialiased")}>
+        <header className="px-28">
+          <nav className="sticky w-full top-0 z-10">
+            <div className="flex items-center justify-between h-24">
+              {/* Logo */}
+              <div className="flex-shrink-0">
+                <Image
+                  src={Logo}
+                  alt="EWB Logo"
+                  className="h-16 w-auto filter invert brightness-0"
+                  priority
+                />
+              </div>
+
+              {/* Navigation */}
+              <ul className="flex space-x-12 text-white font-light tracking-wide">
+                <li>
+                  <a href="#" className="flex items-center space-x-2">
+                    <Icons.home />
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="flex items-center space-x-2">
+                    <Icons.projects />
+                    <span>Projects</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="flex items-center space-x-2">
+                    <Icons.blog />
+                    <span>Blog</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="flex items-center space-x-2">
+                    <Icons.aboutUs />
+                    <span>About Us</span>
+                  </a>
+                </li>
+              </ul>
+              <hr className="hidden md:flex items-center space-x-4" />
+            </div>
+          </nav>
+        </header>
+        <SmoothScrolling>
+          <div className="fixed top-0 left-0 w-full h-screen bg-[url('/_next/static/media/background.b3e6487f.jpg')] bg-top bg-no-repeat bg-cover -z-10" />
+          <div className="relative z-10">{children}</div>{" "}
+        </SmoothScrolling>
       </body>
     </html>
   );
