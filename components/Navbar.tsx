@@ -53,7 +53,7 @@ export function Navbar() {
           </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuLink
-              href="/docs"
+              href="/contact"
               className={navigationMenuTriggerStyle()}
             >
               Contact Us

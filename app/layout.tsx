@@ -6,6 +6,8 @@ import SmoothScrolling from "@/components/SmoothScroll";
 import Image from "next/image";
 import Logo from "@/public/EWB Logo.svg";
 import { Icons } from "@/components/icons";
+import { Navbar } from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const lato = Lato({
   variable: "--font-lato",
@@ -25,55 +27,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(lato.className, "antialiased")}>
-        <header className="px-28">
-          <nav className="sticky w-full top-0 z-10">
-            <div className="flex items-center justify-between h-24">
-              {/* Logo */}
-              <div className="flex-shrink-0">
-                <Image
-                  src={Logo}
-                  alt="EWB Logo"
-                  className="h-16 w-auto filter invert brightness-0"
-                  priority
-                />
-              </div>
-
-              {/* Navigation */}
-              <ul className="flex space-x-12 text-white font-light tracking-wide">
-                <li>
-                  <a href="#" className="flex items-center space-x-2">
-                    <Icons.home />
-                    <span>Home</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="flex items-center space-x-2">
-                    <Icons.projects />
-                    <span>Projects</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="flex items-center space-x-2">
-                    <Icons.blog />
-                    <span>Blog</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="flex items-center space-x-2">
-                    <Icons.aboutUs />
-                    <span>About Us</span>
-                  </a>
-                </li>
-              </ul>
-              <hr className="hidden md:flex items-center space-x-4" />
-            </div>
-          </nav>
+        <header >
+          <Navbar />
         </header>
         <SmoothScrolling>
           <div className="fixed top-0 left-0 w-full h-screen bg-[url('/_next/static/media/background.b3e6487f.jpg')] bg-top bg-no-repeat bg-cover -z-10" />
           <div className="relative z-10">{children}</div>{" "}
         </SmoothScrolling>
       </body>
+      <footer>
+        <Footer />
+      </footer>
     </html>
   );
 }
