@@ -34,10 +34,12 @@ export default function RootLayout({
           <div className="fixed top-0 left-0 w-full h-screen bg-[url('/_next/static/media/background.b3e6487f.jpg')] bg-top bg-no-repeat bg-cover -z-10" />
           <div className="relative z-10">{children}</div>{" "}
         </SmoothScrolling>
-      </body>
       <footer>
         <Footer />
       </footer>
+
+      </body>
+      
     </html>
   );
 }
