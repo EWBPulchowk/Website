@@ -47,7 +47,7 @@ export default function AboutPage() {
           <p>
            
           </p>
-          <p>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We also invest in developing the next generation of socially
             conscious engineers through skill-building workshops, field
             projects, and interdisciplinary collaborations.
@@ -56,13 +56,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Descriptive About Section */}
-      <section className="pb-12 px-6">
-        <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl p-8 border border-gray-100 text-gray-700 text-base leading-relaxed space-y-6">
-          
-        </div>
-      </section>
-
+      
       {/* Our Team Section */}
       <section className="pb-20 px-6">
         <div className="max-w-6xl mx-auto">
@@ -72,7 +66,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {team.map((member) => (
               <div
-                key={member.name}
+                key={member.name} 
                 className="bg-white rounded-2xl shadow-lg p-4 text-center border border-gray-100"
               >
                 <img
