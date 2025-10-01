@@ -9,9 +9,11 @@ import { Icons } from "@/components/icons";
 import { Navbar } from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+
 const lato = Lato({
   variable: "--font-lato",
   weight: ["100", "300", "400", "700", "900"],
+  subsets: ["latin"]
 });
 
 export const metadata: Metadata = {
