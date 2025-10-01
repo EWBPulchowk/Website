@@ -37,6 +37,13 @@
         "filename": "Prabesh__Human Resource"
       },
       {
+        "name": "Aayush",
+        "position": "Technical",
+        "image": "/images/team/Aayush_Gelal.jpeg",
+        "filename": "Aayush_Technical"
+      },
+
+      {
         "name": "Reyan",
         "position": "Project Coordinator",
         "image": "/images/team/Reyan_ProjectCoordinator.jpg",
