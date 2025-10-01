@@ -3,9 +3,7 @@ import { Lato } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import SmoothScrolling from "@/components/SmoothScroll";
-import Image from "next/image";
-import Logo from "@/public/EWB Logo.svg";
-import { Icons } from "@/components/icons";
+
 import { Navbar } from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
