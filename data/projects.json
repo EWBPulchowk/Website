@@ -1,0 +1,55 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "Rural Water Access Initiative",
+        "description": "Designing and implementing sustainable water supply systems for remote villages in Nepal.",
+        "status": "Active",
+        "location": "Sindhupalchok District",
+        "startDate": "January 2024",
+        "beneficiaries": 500,
+        "featured": true
+      },
+      {
+        "id": 2,
+        "title": "Solar Power for Schools",
+        "description": "Installing solar panel systems to provide reliable electricity to rural educational facilities.",
+        "status": "Planning",
+        "location": "Dolakha District",
+        "startDate": "April 2024",
+        "beneficiaries": 300,
+        "featured": true
+      },
+      {
+        "id": 3,
+        "title": "Bridge Construction Project",
+        "description": "Building pedestrian bridges to connect isolated communities during monsoon season.",
+        "status": "Completed",
+        "location": "Ramechhap District",
+        "startDate": "August 2023",
+        "beneficiaries": 800,
+        "featured": true
+      },
+      {
+        "id": 4,
+        "title": "Sanitation System Upgrade",
+        "description": "Improving waste management and sanitation facilities in rural health posts.",
+        "status": "Active",
+        "location": "Nuwakot District",
+        "startDate": "February 2024",
+        "beneficiaries": 200,
+        "featured": false
+      },
+      {
+        "id": 5,
+        "title": "Agricultural Irrigation System",
+        "description": "Developing efficient irrigation systems to improve crop yields for local farmers.",
+        "status": "Planning",
+        "location": "Kavrepalanchok District",
+        "startDate": "May 2024",
+        "beneficiaries": 150,
+        "featured": false
+      }
+    ]
+  }
+  

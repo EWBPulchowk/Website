@@ -1,0 +1,31 @@
+{
+    "faqs": [
+      {
+        "id": 1,
+        "question": "What is Engineers Without Borders?",
+        "answer": "Engineers Without Borders (EWB) is a non-profit organization that partners with communities to improve their quality of life through education and implementation of sustainable engineering projects, while developing internationally responsible engineering students."
+      },
+      {
+        "id": 2,
+        "question": "How can I join EWB Pulchowk?",
+        "answer": "You can join by attending our recruitment events, contacting us through our website, or reaching out to any of our team members. We welcome students from all engineering disciplines who are passionate about making a positive impact."
+      },
+      {
+        "id": 3,
+        "question": "What kind of projects does EWB work on?",
+        "answer": "We work on various sustainable engineering projects including water and sanitation systems, renewable energy solutions, infrastructure development, and educational programs. All projects are community-driven and focus on long-term sustainability."
+      },
+      {
+        "id": 4,
+        "question": "Do I need prior experience to participate?",
+        "answer": "No prior experience is required! We provide training and mentorship to help you develop the skills needed for our projects. What matters most is your enthusiasm to learn and contribute to meaningful work."
+      },
+      
+      {
+        "id": 5,
+        "question": "Can I participate if I'm not an engineering student?",
+        "answer": "While our focus is on engineering solutions, we welcome students from other disciplines who can contribute skills in areas like project management, communications, fundraising, and community outreach."
+      }
+    ]
+  }
+  

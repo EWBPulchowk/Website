@@ -1,0 +1,95 @@
+{
+    "teamMembers": [
+      {
+        "name": "Bibek",
+        "position": "President",
+        "image": "/images/team/Bibek_President.jpeg",
+        "filename": "Bibek_President.jpeg"
+      },
+      {
+        "name": "Arpit",
+        "position": "VP and Communication",
+        "image": "/images/team/Arpit_VPandCommunication.png",
+        "filename": "Arpit_VPandCommunication.png"
+      },
+      {
+        "name": "Niharika",
+        "position": "Vice President",
+        "image": "/images/team/Niharika_Vice President_.jpg",
+        "filename": "Niharika_Vice_President"
+      },
+      {
+        "name": "Narayan",
+        "position": "Secretary",
+        "image": "/images/team/Narayan_Secretary.jpeg",
+        "filename": "Narayan_Secretary.jpeg"
+      },
+      {
+        "name": "Chiranjivee",
+        "position": "Vice-Secretary",
+        "image": "/images/team/Chiranjivee_Vice-Secretary.jpeg",
+        "filename": "Chiranjivee_Vice-Secretary.jpeg"
+      },
+      {
+        "name": "Prabesh",
+        "position": "Human Resource",
+        "image": "/images/team/Prabesh _ Human Resource_.jpg",
+        "filename": "Prabesh__Human Resource"
+      },
+      {
+        "name": "Reyan",
+        "position": "Project Coordinator",
+        "image": "/images/team/Reyan_ProjectCoordinator.jpg",
+        "filename": "Reyan_ProjectCoordinator.jpg"
+      },
+      {
+        "name": "Ashesh",
+        "position": "Research Coordinator",
+        "image": "/images/team/Ashesh_ResearchCoordinator.jpg",
+        "filename": "Ashesh_ResearchCoordinator.jpg"
+      },
+      {
+        "name": "Riya",
+        "position": "Outreach Manager",
+        "image": "/images/team/Riya_outreach_manager.jpg",
+        "filename": "Riya_outreach_manager"
+      },
+      {
+        "name": "Aastha",
+        "position": "Event Manager",
+        "image": "/images/team/Aastha_Event Manager.jpg",
+        "filename": "Aastha_Event Manager"
+      },
+      {
+        "name": "Jeevan Acharya",
+        "position": "Executive Member",
+        "image": "/images/team/Jeevan Acharya.jpg",
+        "filename": "Jeevan Acharya.jpg"
+      },
+      {
+        "name": "Diwas",
+        "position": "Executive Member",
+        "image": "/images/team/Diwas_Executive Member.jpg",
+        "filename": "Diwas_Executive Member.jpg"
+      },
+      {
+        "name": "Ishan",
+        "position": "Executive Member",
+        "image": "/images/team/ishan_executive_member.jpeg",
+        "filename": "ishan_executive_member.jpeg"
+      },
+      {
+        "name": "Ishwor",
+        "position": "Executive Member",
+        "image": "/images/team/Ishwor executive member_.webp",
+        "filename": "Ishwor executive member"
+      },
+      {
+        "name": "Ojashwi",
+        "position": "Executive Member",
+        "image": "/images/team/Ojashwi _executive member_.jpg",
+        "filename": "Ojashwi_executive member"
+      }
+    ]
+  }
+  

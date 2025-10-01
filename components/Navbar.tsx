@@ -29,7 +29,7 @@ export function Navbar() {
         <div className="flex items-center gap-4">
           <NavigationMenuItem>
             <NavigationMenuLink
-              href="/home"
+              href="/"
               className={navigationMenuTriggerStyle()}
             >
               Home
@@ -37,20 +37,13 @@ export function Navbar() {
           </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuLink
-              href="/docs"
+              href="/events"
               className={navigationMenuTriggerStyle()}
             >
               Events
             </NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              href="/docs"
-              className={navigationMenuTriggerStyle()}
-            >
-              Projects
-            </NavigationMenuLink>
-          </NavigationMenuItem>
+        
           <NavigationMenuItem>
             <NavigationMenuLink
               href="/about"

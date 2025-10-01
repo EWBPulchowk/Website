@@ -1,0 +1,56 @@
+
+ {
+
+  "events": [
+    {
+      "id": 1,
+      "title": "EWB CU Boulder Campus Tour",
+      "type": "Workshop",
+      "featured": true,
+      "description": "Photo highlights from the EWB CU Boulder 2nd Trip campus visit.",
+      "images": [
+        "https://drive.google.com/file/d/1Cgh7-86AOaMPOPOhtPFVnJyxsZVkwnde/view?usp=sharing",
+        "https://drive.google.com/file/d/1CbYD8IADKhBW2fM3WK4Ph0EdQqJ_MKd_/view?usp=drive_link",
+        "https://drive.google.com/file/d/1CgC7MZ1suA2sNLsnt-2Zd6459fzT5b2y/view?usp=sharing"
+      ],
+      "date": "2022-12-03",
+      "location": "Pulchowk Campus"
+    },
+    {
+      "id": 2,
+      "title": "Global Village 2024",
+      "type": "Seminar",
+      "featured": true,
+      "description": "Cultural showcase and celebration with students at Global Village 2024.",
+      "images": [
+        "https://drive.google.com/file/d/11uzgxOH9iHvwD2VhFL5sYb_2nvUJ-YrK/view?usp=drive_link",
+        "https://drive.google.com/file/d/1AP2zgbjMKmSTI3rFzCStloSzielQb5R6/view?usp=drive_link" ,
+        "https://drive.google.com/file/d/1K4Ztciybc7Re-Ol824XHc-XVXggG_aUL/view?usp=drive_link",
+        "https://drive.google.com/file/d/1nWZuAjSyFbyblElmC_DzAww68pYZHAHB/view?usp=drive_link",
+        "https://drive.google.com/file/d/1jnBSBX3IQ0piH3i3B4KTUmGfPH9F_Kak/view?usp=drive_link"
+
+      ],
+      "date": "2022-12-03",
+      "location": "Pulchowk Campus"
+
+
+    },
+    {
+      "id": 3,
+      "title": "Pulchowk MUN",
+      "type": "Conference",
+      "featured": true,
+      "description": "Snapshots from the Pulchowk Model United Nations sessions.",
+      "images": [
+        "https://drive.google.com/file/d/1y14QywCTB9-3N7ndSTf4eiziRMIldr25/view?usp=sharing",
+        "https://drive.google.com/file/d/1E-P-S1nu4kmKBSQsBkIhvvVjsfoxDcgP/view?usp=sharing",
+        "https://drive.google.com/file/d/1QvhOAr_-wnmZpRkKB59jH8lkkvKQeusy/view?usp=sharing"
+
+      ],
+      "date": "2022-12-03",
+      "location": "Pulchowk Campus"
+
+
+    }
+  ]
+}
