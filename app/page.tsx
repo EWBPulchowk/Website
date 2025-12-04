@@ -6,6 +6,7 @@ import * as Avatar from "@radix-ui/react-avatar"
 import eventData from "@/data/events.json"
 import faqData from "@/data/faq.json"
 import * as Collapsible from "@radix-ui/react-collapsible"
+import Hero1 from "@/components/Hero1"
 
 
 export default function HomePage() {
@@ -18,6 +19,8 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-slate-50">
      
+     <Hero1/>
+
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">

@@ -26,41 +26,65 @@ export function Navbar() {
             </Link>
           </NavigationMenuItem>
         </div>
+
         <div className="flex items-center gap-4">
           <NavigationMenuItem>
             <NavigationMenuLink
               href="/"
-              className={navigationMenuTriggerStyle()}
+              className={`${navigationMenuTriggerStyle()} hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
             >
               Home
             </NavigationMenuLink>
           </NavigationMenuItem>
+
           <NavigationMenuItem>
             <NavigationMenuLink
               href="/events"
-              className={navigationMenuTriggerStyle()}
+              className={`${navigationMenuTriggerStyle()} hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
             >
               Events
             </NavigationMenuLink>
           </NavigationMenuItem>
-        
+
           <NavigationMenuItem>
             <NavigationMenuLink
               href="/about"
-              className={navigationMenuTriggerStyle()}
+              className={`${navigationMenuTriggerStyle()} hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
             >
               About Us
             </NavigationMenuLink>
           </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              href="/blogs"
+              className={`${navigationMenuTriggerStyle()} hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
+            >
+              Blogs
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              href="/alumni"
+              className={`${navigationMenuTriggerStyle()} hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
+            >
+              Alumni Diaries
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+
           <NavigationMenuItem>
             <NavigationMenuLink
               href="/contact"
-              className={navigationMenuTriggerStyle()}
+              className={`${navigationMenuTriggerStyle()} hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
             >
               Contact Us
             </NavigationMenuLink>
           </NavigationMenuItem>
         </div>
+
+        
+        
       </NavigationMenuList>
     </NavigationMenu>
   );
