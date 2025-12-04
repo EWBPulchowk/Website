@@ -1,101 +1,71 @@
 {
     "teamMembers": [
       {
-        "name": "Bibek",
+        "name": "Narayan Adhikari",
         "position": "President",
-        "image": "/images/team/Bibek_President.jpeg",
-        "filename": "Bibek_President.jpeg"
+        "image": "/images/team2/Narayan_Adhikari_President.jpg",
+        "filename": "Narayan_President.jpeg"
       },
       {
-        "name": "Arpit",
-        "position": "VP and Communication",
-        "image": "/images/team/Arpit_VPandCommunication.png",
-        "filename": "Arpit_VPandCommunication.png"
-      },
-      {
-        "name": "Niharika",
+        "name": "Rittika Parajuli",
         "position": "Vice President",
-        "image": "/images/team/Niharika_Vice President_.jpg",
-        "filename": "Niharika_Vice_President"
+        "image": "/images/team2/Rittika_Parajuli_Vice_President.jpeg",
+        "filename": "Rittika_Vice_President"
       },
       {
-        "name": "Narayan",
+        "name": "Kaushal Ghimire",
         "position": "Secretary",
-        "image": "/images/team/Narayan_Secretary.jpeg",
-        "filename": "Narayan_Secretary.jpeg"
+        "image": "/images/team2/Kaushal_Ghimire_Secretary.jpg",
+        "filename": "Kaushal_Secretary.jpeg"
       },
       {
-        "name": "Chiranjivee",
+        "name": "Prakriti Pandey",
         "position": "Vice-Secretary",
-        "image": "/images/team/Chiranjivee_Vice-Secretary.jpeg",
-        "filename": "Chiranjivee_Vice-Secretary.jpeg"
+        "image": "/images/team2/Prakriti_Pandey_Vice_Secretary.jpg",
+        "filename": "Prakriti_Pandey_Vice-Secretary.jpeg"
       },
       {
-        "name": "Prabesh",
-        "position": "Human Resource",
-        "image": "/images/team/Prabesh _ Human Resource_.jpg",
-        "filename": "Prabesh__Human Resource"
+        "name": "Kopila Pant",
+        "position": "Finance Coordinator",
+        "image": "/images/team2/Kopila_Pant_Finance_Coordinator.jpg",
+        "filename": "Kopila_Finance_Coordinator"
       },
       {
-        "name": "Aayush",
-        "position": "Technical Head",
-        "image": "/images/team/Aayush_Gelal.jpeg",
+        "name": "Shreyam Regmi",
+        "position": "Technical Lead",
+        "image": "/images/team2/Shreyam_Regmi_Technical_Lead.jpg",
         "filename": "Aayush_Technical"
       },
 
       {
-        "name": "Reyan",
-        "position": "Project Coordinator",
-        "image": "/images/team/Reyan_ProjectCoordinator.jpg",
+        "name": "Pawan Niroula",
+        "position": "Research and Project Coordinator",
+        "image": "/images/team2/Pawan_Niroula_Research_and_Project_Coordinator.jpg",
         "filename": "Reyan_ProjectCoordinator.jpg"
       },
       {
-        "name": "Ashesh",
-        "position": "Research Coordinator",
-        "image": "/images/team/Ashesh_ResearchCoordinator.jpg",
-        "filename": "Ashesh_ResearchCoordinator.jpg"
-      },
-      {
-        "name": "Riya",
+        "name": "Peshal Kumar Shrestha",
         "position": "Outreach Manager",
-        "image": "/images/team/Riya_outreach_manager.jpg",
+        "image": "/images/team2/Peshal_Kumar_Shrestha_Outreach_Manager.jpg",
         "filename": "Riya_outreach_manager"
       },
       {
-        "name": "Aastha",
+        "name": "Rakshyak Dhakal",
         "position": "Event Manager",
-        "image": "/images/team/Aastha_Event Manager.jpg",
+        "image": "/images/team2/Rakshyak_Dhakal_Event Manager.jpg",
         "filename": "Aastha_Event Manager"
       },
       {
-        "name": "Jeevan Acharya",
-        "position": "Executive Member",
-        "image": "/images/team/Jeevan Acharya.jpg",
+        "name": "Ashika Budhathoki",
+        "position": "Social Media and PR Coordinator",
+        "image": "/images/team2/Ashika_Budhathoki_Social_Media_and_PR_coordinator.jpg",
         "filename": "Jeevan Acharya.jpg"
       },
       {
-        "name": "Diwas",
-        "position": "Executive Member",
-        "image": "/images/team/Diwas_Executive Member.jpg",
+        "name": "Pragyan Neupane",
+        "position": "Creative Lead",
+        "image": "/images/team2/Pragyan_Neupane_Creatve_Lead",
         "filename": "Diwas_Executive Member.jpg"
-      },
-      {
-        "name": "Ishan",
-        "position": "Executive Member",
-        "image": "/images/team/ishan_executive_member.jpeg",
-        "filename": "ishan_executive_member.jpeg"
-      },
-      {
-        "name": "Ishwor",
-        "position": "Executive Member",
-        "image": "/images/team/Ishwor executive member_.webp",
-        "filename": "Ishwor executive member"
-      },
-      {
-        "name": "Ojashwi",
-        "position": "Executive Member",
-        "image": "/images/team/Ojashwi _executive member_.jpg",
-        "filename": "Ojashwi_executive member"
       }
     ]
   }
