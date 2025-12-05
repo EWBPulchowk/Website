@@ -31,7 +31,7 @@ export function Navbar() {
           <NavigationMenuItem>
             <NavigationMenuLink
               href="/"
-              className={`${navigationMenuTriggerStyle()} hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
+              className={`${navigationMenuTriggerStyle()} font-bold text-md text-[#295393] hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
             >
               Home
             </NavigationMenuLink>
@@ -40,7 +40,7 @@ export function Navbar() {
           <NavigationMenuItem>
             <NavigationMenuLink
               href="/events"
-              className={`${navigationMenuTriggerStyle()} hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
+              className={`${navigationMenuTriggerStyle()} font-bold text-md text-[#295393] hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
             >
               Events
             </NavigationMenuLink>
@@ -49,7 +49,7 @@ export function Navbar() {
           <NavigationMenuItem>
             <NavigationMenuLink
               href="/about"
-              className={`${navigationMenuTriggerStyle()} hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
+              className={`${navigationMenuTriggerStyle()} font-bold text-md text-[#295393] hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
             >
               About Us
             </NavigationMenuLink>
@@ -58,7 +58,7 @@ export function Navbar() {
           <NavigationMenuItem>
             <NavigationMenuLink
               href="/blogs"
-              className={`${navigationMenuTriggerStyle()} hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
+              className={`${navigationMenuTriggerStyle()} font-bold text-md text-[#295393] hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
             >
               Blogs
             </NavigationMenuLink>
@@ -67,7 +67,7 @@ export function Navbar() {
           <NavigationMenuItem>
             <NavigationMenuLink
               href="/alumni"
-              className={`${navigationMenuTriggerStyle()} hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
+              className={`${navigationMenuTriggerStyle()} font-bold text-md text-[#295393] hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
             >
               Alumni Diaries
             </NavigationMenuLink>
@@ -76,7 +76,7 @@ export function Navbar() {
           <NavigationMenuItem>
             <NavigationMenuLink
               href="/contact"
-              className={`${navigationMenuTriggerStyle()} hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
+              className={`${navigationMenuTriggerStyle()} font-bold text-md text-[#295393] hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
             >
               Contact Us
             </NavigationMenuLink>
