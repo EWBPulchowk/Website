@@ -1,50 +1,60 @@
-import { promises as fs } from "fs";
-import path from "path";
 import { NextRequest, NextResponse } from "next/server";
+import clientPromise from "@/lib/mongodb";
 
-// Define a type for the form data
 interface FormData {
   name: string;
   email: string;
   year: string;
   depart: string;
-  rollno: string,
-  phone: string,
-  team1: string,
-  team2: string,
+  rollNo: string;
+  phone: string;
+  campus: string;
+  linkedIn: string;
+  team1: string;
+  team2: string;
+  selectedQuestions: string[];
+  answers: string[];
 }
 
+// POST: Save form submission
 export async function POST(request: NextRequest) {
   try {
     const formData: FormData = await request.json();
 
-    // Path to JSON file
-    const filePath = path.join(process.cwd(), "public", "datas", "submissions.json");
+    const client = await clientPromise;
+    const db = client.db("ewb_db"); // your database name
+    const collection = db.collection("submissions");
 
-    // Read existing data
-    let existingData: (FormData & { id: number })[] = [];
-    try {
-      const fileContents = await fs.readFile(filePath, "utf-8");
-      existingData = JSON.parse(fileContents);
-    } catch (err) {
-      // file may not exist yet
-      existingData = [];
-    }
+    const result = await collection.insertOne({
+      ...formData,
+      createdAt: new Date(),
+    });
 
-    // Generate unique id
-    const newId = existingData.length > 0 ? existingData[existingData.length - 1].id + 1 : 1;
-
-    const newEntry = {
-      id: newId,
-      ...formData
-    };
-
-    existingData.push(newEntry);
-
-    await fs.writeFile(filePath, JSON.stringify(existingData, null, 2));
-
-    return NextResponse.json({ message: "Form saved successfully!" }, { status: 200 });
+    return NextResponse.json(
+      { message: "Form saved successfully!", id: result.insertedId },
+      { status: 200 }
+    );
   } catch (error) {
+    console.error(error);
     return NextResponse.json({ error: "Failed to save form" }, { status: 500 });
+  }
+}
+
+// GET: Fetch all submissions
+export async function GET() {
+  try {
+    const client = await clientPromise;
+    const db = client.db("ewb_db");
+    const collection = db.collection("submissions");
+
+    const submissions = await collection
+      .find({})
+      .sort({ createdAt: -1 }) // newest first
+      .toArray();
+
+    return NextResponse.json(submissions, { status: 200 });
+  } catch (error) {
+    console.error(error);
+    return NextResponse.json({ error: "Failed to fetch submissions" }, { status: 500 });
   }
 }

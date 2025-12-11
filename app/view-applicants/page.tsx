@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 interface Submission {
-  id: number;
+  _id: string; // MongoDB id
   name: string;
   email: string;
   year: string;
@@ -24,7 +24,7 @@ export default function ViewSubmissions() {
   const [selectedTeam, setSelectedTeam] = useState("");
 
   useEffect(() => {
-    fetch("/datas/submissions.json")
+    fetch("/api/saveForm")
       .then((res) => res.json())
       .then((json: Submission[]) => {
         setSubmissions(json);
@@ -74,8 +74,8 @@ export default function ViewSubmissions() {
       {/* Display Each Submission */}
       <div className="flex flex-col gap-8">
         {filtered.map((item) => (
-          <div key={item.id} className="border p-6 rounded-xl bg-gray-50 shadow">
-            <h2 className="text-xl font-bold text-[#295393]">ID: {item.id}</h2>
+          <div key={item._id} className="border p-6 rounded-xl bg-gray-50 shadow">
+            <h2 className="text-xl font-bold text-[#295393]">ID: {item._id}</h2>
 
             {/* Info Section */}
             <div className="grid grid-cols-2 gap-4 mt-4 text-sm">
