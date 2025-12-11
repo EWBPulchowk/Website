@@ -83,7 +83,7 @@ export default function ContactPage() {
                     href="mailto:ewbpulchowk@gmail.com"
                     className="text-gray-700 text-base hover:text-blue-600 transition-colors font-medium"
                   >
-                    ewbpulchowk@gmail.com
+                    ewb@pcampus.edu.np
                   </a>
                   <p className="text-gray-500 text-sm mt-1">
                     We respond within 24 hours

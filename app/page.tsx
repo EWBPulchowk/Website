@@ -21,51 +21,6 @@ export default function HomePage() {
      
      <Hero1/>
 
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Engineers Without Borders - Pulchowk</h1>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              We are a passionate community of engineering students dedicated to creating sustainable solutions for
-              underserved communities. Through collaborative projects, we bridge the gap between engineering innovation
-              and real-world social impact, working hand-in-hand with communities to design and implement solutions that
-              improve lives and strengthen local capacity.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="text-center p-8 rounded-3xl bg-gradient-to-br from-blue-50 to-blue-100">
-              <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Users className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Community Focus</h3>
-              <p className="text-gray-600">
-                Working directly with communities to understand their needs and develop appropriate solutions.
-              </p>
-            </div>
-
-            <div className="text-center p-8 rounded-3xl bg-gradient-to-br from-green-50 to-green-100">
-              <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Target className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Sustainable Solutions</h3>
-              <p className="text-gray-600">
-                Designing long-term, environmentally conscious solutions that communities can maintain.
-              </p>
-            </div>
-
-            <div className="text-center p-8 rounded-3xl bg-gradient-to-br from-purple-50 to-purple-100">
-              <div className="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Wrench className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Engineering Excellence</h3>
-              <p className="text-gray-600">
-                Applying rigorous engineering principles to create practical, effective solutions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -188,10 +143,10 @@ export default function HomePage() {
               sustainable solutions.
             </p>
             <Link
-              href="/contact"
+              href="/general-member"
               className="inline-flex items-center px-8 py-4 bg-blue-600 text-white rounded-2xl font-semibold hover:bg-blue-700 transition-all duration-200 shadow-lg"
             >
-              Join EWB Pulchowk
+              General Members Application
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
           </div>

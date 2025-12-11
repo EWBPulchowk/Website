@@ -15,6 +15,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 
+
 export function Navbar() {
   return (
     <NavigationMenu className="min-w-screen border-b border-slate-200 bg-white dark:bg-slate-900 dark:border-slate-700">
@@ -28,6 +29,7 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-4">
+
           <NavigationMenuItem>
             <NavigationMenuLink
               href="/"
@@ -48,6 +50,15 @@ export function Navbar() {
 
           <NavigationMenuItem>
             <NavigationMenuLink
+              href="/projects"
+              className={`${navigationMenuTriggerStyle()} font-bold text-md text-[#295393] hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
+            >
+              Projects
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <NavigationMenuLink
               href="/about"
               className={`${navigationMenuTriggerStyle()} font-bold text-md text-[#295393] hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
             >
@@ -57,7 +68,7 @@ export function Navbar() {
 
           <NavigationMenuItem>
             <NavigationMenuLink
-              href="/blogs"
+              href="/blog"
               className={`${navigationMenuTriggerStyle()} font-bold text-md text-[#295393] hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
             >
               Blogs
@@ -66,7 +77,7 @@ export function Navbar() {
 
           <NavigationMenuItem>
             <NavigationMenuLink
-              href="/alumni"
+              href="/alumni-diaries"
               className={`${navigationMenuTriggerStyle()} font-bold text-md text-[#295393] hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
             >
               Alumni Diaries
@@ -78,6 +89,7 @@ export function Navbar() {
               href="/contact"
               className={`${navigationMenuTriggerStyle()} font-bold text-md text-[#295393] hover:bg-[#295393] hover:text-white rounded-md px-3 py-2 transition-colors duration-200`}
             >
+
               Contact Us
             </NavigationMenuLink>
           </NavigationMenuItem>
