@@ -156,7 +156,7 @@ export default function Questions() {
           <option value="Event_Management_Team">Event Management Team</option>
           <option value="Social_Media_and_PR_Team">Social Media and PR Team</option>
           <option value="Technical_Team">Technical Team</option>
-          <option value="Finance_Team">Finance Coordinator Team</option>
+          <option value="Finance_Coordinator_Team">Finance Coordinator Team</option>
         </select>
 
         {/* PRIORITY 2 */}
