@@ -1,11 +1,14 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 interface QuestionsData {
   [key: string]: string[];
 }
 
 export default function Questions() {
+  const router = useRouter();
+
   const [data, setData] = useState<QuestionsData | null>(null);
 
   const [name, setName] = useState("");
@@ -21,6 +24,7 @@ export default function Questions() {
 
   const [selectedQuestions, setSelectedQuestions] = useState<string[]>([]);
   const [answers, setAnswers] = useState<string[]>([]);
+  const [submitting, setSubmitting] = useState(false);
 
   /* Load JSON */
   useEffect(() => {
@@ -64,6 +68,8 @@ export default function Questions() {
       return;
     }
 
+    setSubmitting(true); // disable button
+
     const formData = {
       name,
       email,
@@ -90,8 +96,7 @@ export default function Questions() {
 
       if (!res.ok) throw new Error(result.error);
 
-      alert(result.message);
-
+      /* RESET FORM */
       setName("");
       setEmail("");
       setYear("");
@@ -104,8 +109,12 @@ export default function Questions() {
       setTeam2("");
       setSelectedQuestions([]);
       setAnswers([]);
+
+      /* NAVIGATE TO SUCCESS PAGE */
+      router.push("/form-success");
     } catch {
       alert("Failed to submit form.");
+      setSubmitting(false); // re-enable button on error
     }
   };
 
@@ -117,72 +126,155 @@ export default function Questions() {
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-6">
         {/* BASIC INFO */}
-        <input required placeholder="Enter your name"
-          value={name} onChange={e => setName(e.target.value)}
-          className="border-2 border-[#295393] rounded-lg px-4 py-2" />
+        <input
+          required
+          placeholder="Enter your name"
+          value={name}
+          onChange={e => setName(e.target.value)}
+          className="border-2 border-[#295393] rounded-lg px-4 py-2"
+        />
 
-        <input required type="email" placeholder="Enter your email"
-          value={email} onChange={e => setEmail(e.target.value)}
-          className="border-2 border-[#295393] rounded-lg px-4 py-2" />
+        <input
+          required
+          type="email"
+          placeholder="Enter your email"
+          value={email}
+          onChange={e => setEmail(e.target.value)}
+          className="border-2 border-[#295393] rounded-lg px-4 py-2"
+        />
 
-        <input required placeholder="Enter your year of study"
-          value={year} onChange={e => setYear(e.target.value)}
-          className="border-2 border-[#295393] rounded-lg px-4 py-2" />
+        <input
+          required
+          placeholder="Enter your year of study"
+          value={year}
+          onChange={e => setYear(e.target.value)}
+          className="border-2 border-[#295393] rounded-lg px-4 py-2"
+        />
 
-        <input required placeholder="Enter your department"
-          value={depart} onChange={e => setDepart(e.target.value)}
-          className="border-2 border-[#295393] rounded-lg px-4 py-2" />
+        <input
+          required
+          placeholder="Enter your department"
+          value={depart}
+          onChange={e => setDepart(e.target.value)}
+          className="border-2 border-[#295393] rounded-lg px-4 py-2"
+        />
 
-        <input required placeholder="Enter your roll no"
-          value={rollNo} onChange={e => setRollNo(e.target.value)}
-          className="border-2 border-[#295393] rounded-lg px-4 py-2" />
+        <input
+          required
+          placeholder="Enter your roll no"
+          value={rollNo}
+          onChange={e => setRollNo(e.target.value)}
+          className="border-2 border-[#295393] rounded-lg px-4 py-2"
+        />
 
-        <input required placeholder="Enter your phone number"
-          value={phone} onChange={e => setPhone(e.target.value)}
-          className="border-2 border-[#295393] rounded-lg px-4 py-2" />
+        <input
+          required
+          placeholder="Enter your phone number"
+          value={phone}
+          onChange={e => setPhone(e.target.value)}
+          className="border-2 border-[#295393] rounded-lg px-4 py-2"
+        />
 
-        <input required placeholder="Enter your campus"
-          value={campus} onChange={e => setCampus(e.target.value)}
-          className="border-2 border-[#295393] rounded-lg px-4 py-2" />
+        <input
+          required
+          placeholder="Enter your campus"
+          value={campus}
+          onChange={e => setCampus(e.target.value)}
+          className="border-2 border-[#295393] rounded-lg px-4 py-2"
+        />
 
-        <input required placeholder="Enter your LinkedIn URL"
-          value={linkedIn} onChange={e => setLinkedIn(e.target.value)}
-          className="border-2 border-[#295393] rounded-lg px-4 py-2" />
+        <input
+          required
+          placeholder="Enter your LinkedIn URL"
+          value={linkedIn}
+          onChange={e => setLinkedIn(e.target.value)}
+          className="border-2 border-[#295393] rounded-lg px-4 py-2"
+        />
 
         {/* PRIORITIES */}
-        <select required value={team1}
+        <select
+          required
+          value={team1}
           onChange={e => setTeam1(e.target.value)}
-          className="border-2 border-[#295393] rounded-lg px-4 py-2">
+          className="border-2 border-[#295393] rounded-lg px-4 py-2"
+        >
           <option value="">Select Priority 1</option>
-          <option value="Project_and_Research_Team">Project and Research Team</option>
-          <option value="Outreach_Management_Team">Outreach Management Team</option>
+          <option value="Project_and_Research_Team">
+            Project and Research Team
+          </option>
+          <option value="Outreach_Management_Team">
+            Outreach Management Team
+          </option>
           <option value="Event_Management_Team">Event Management Team</option>
-          <option value="Social_Media_and_PR_Team">Social Media and PR Team</option>
+          <option value="Social_Media_and_PR_Team">
+            Social Media and PR Team
+          </option>
           <option value="Technical_Team">Technical Team</option>
-          <option value="Finance_Coordinator_Team">Finance Coordinator Team</option>
+          <option value="Finance_Coordinator_Team">
+            Finance Coordinator Team
+          </option>
         </select>
 
-        <select required value={team2}
+        <select
+          required
+          value={team2}
           onChange={e => setTeam2(e.target.value)}
-          className="border-2 border-[#295393] rounded-lg px-4 py-2">
+          className="border-2 border-[#295393] rounded-lg px-4 py-2"
+        >
           <option value="">Select Priority 2</option>
           <option value="None">None</option>
-          <option value="Project_and_Research_Team" disabled={team1 === "Project_and_Research_Team"}>Project and Research Team</option>
-          <option value="Outreach_Management_Team" disabled={team1 === "Outreach_Management_Team"}>Outreach Management Team</option>
-          <option value="Event_Management_Team" disabled={team1 === "Event_Management_Team"}>Event Management Team</option>
-          <option value="Social_Media_and_PR_Team" disabled={team1 === "Social_Media_and_PR_Team"}>Social Media and PR Team</option>
-          <option value="Technical_Team" disabled={team1 === "Technical_Team"}>Technical Team</option>
-          <option value="Finance_Coordinator_Team" disabled={team1 === "Finance_Coordinator_Team"}>Finance Coordinator Team</option>
+          <option
+            value="Project_and_Research_Team"
+            disabled={team1 === "Project_and_Research_Team"}
+          >
+            Project and Research Team
+          </option>
+          <option
+            value="Outreach_Management_Team"
+            disabled={team1 === "Outreach_Management_Team"}
+          >
+            Outreach Management Team
+          </option>
+          <option
+            value="Event_Management_Team"
+            disabled={team1 === "Event_Management_Team"}
+          >
+            Event Management Team
+          </option>
+          <option
+            value="Social_Media_and_PR_Team"
+            disabled={team1 === "Social_Media_and_PR_Team"}
+          >
+            Social Media and PR Team
+          </option>
+          <option
+            value="Technical_Team"
+            disabled={team1 === "Technical_Team"}
+          >
+            Technical Team
+          </option>
+          <option
+            value="Finance_Coordinator_Team"
+            disabled={team1 === "Finance_Coordinator_Team"}
+          >
+            Finance Coordinator Team
+          </option>
         </select>
 
-        <button type="button" onClick={showQuestions}
-          className="bg-[#295393] text-white py-2 rounded-lg">
+        <button
+          type="button"
+          onClick={showQuestions}
+          className="bg-[#295393] text-white py-2 rounded-lg"
+        >
           View Questions
         </button>
 
         {/* QUESTIONS */}
         {selectedQuestions.map((q, idx) => (
-          <div key={idx} className="bg-gray-100 p-4 rounded-lg flex flex-col gap-2">
+          <div
+            key={idx}
+            className="bg-gray-100 p-4 rounded-lg flex flex-col gap-2"
+          >
             <p className="font-semibold text-[#295393]">{q}</p>
             <textarea
               required
@@ -201,10 +293,10 @@ export default function Questions() {
         {/* SUBMIT */}
         <input
           type="submit"
-          value="Submit"
-          disabled={selectedQuestions.length === 0}
+          value={submitting ? "Submitting..." : "Submit"}
+          disabled={selectedQuestions.length === 0 || submitting}
           className={`py-3 font-bold rounded-lg ${
-            selectedQuestions.length === 0
+            selectedQuestions.length === 0 || submitting
               ? "bg-gray-400 cursor-not-allowed"
               : "bg-black text-white cursor-pointer"
           }`}
