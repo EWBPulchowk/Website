@@ -213,6 +213,9 @@ export default function Questions() {
           <option value="Finance_Coordinator_Team">
             Finance Coordinator Team
           </option>
+          <option value="Creative_Team">
+            Creative Team
+          </option>
         </select>
 
         <select
@@ -258,6 +261,12 @@ export default function Questions() {
             disabled={team1 === "Finance_Coordinator_Team"}
           >
             Finance Coordinator Team
+          </option>
+          <option
+            value="Creative_Team"
+            disabled={team1 === "Creative_Team"}
+          >
+            Creative Team
           </option>
         </select>
 
