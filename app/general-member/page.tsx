@@ -119,10 +119,25 @@ export default function Questions() {
   };
 
   return (
+    // <div className="max-w-3xl mx-auto my-12 p-8 bg-white rounded-xl shadow-lg">
+    //   <h1 className="text-3xl font-bold text-center text-[#295393] mb-8">
+    //     General Members Application
+    //   </h1>
+
+      
+
+    //   <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+
+
     <div className="max-w-3xl mx-auto my-12 p-8 bg-white rounded-xl shadow-lg">
-      <h1 className="text-3xl font-bold text-center text-[#295393] mb-8">
+      <h1 className="text-3xl font-bold text-center text-[#295393] mb-4">
         General Members Application
       </h1>
+
+      {/* Info Message */}
+      <p className="text-center text-red-600 font-semibold mb-6">
+        We currently stopped accepting general members applications, but if you are still interested, email us at <a href="mailto:ewb@pcampus.edu.np" className="underline">ewb@pcampus.edu.np</a>.
+      </p>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-6">
         {/* BASIC INFO */}
