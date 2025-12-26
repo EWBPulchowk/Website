@@ -63,7 +63,7 @@ export default function Footer() {
                 className="flex items-center gap-2 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-600"
               >
                 <Mail className="h-4 w-4 shrink-0" />
-                ewbpulchowk@gmail.com
+                ewb@pcampus.edu.np
               </a>
             </li>
             <li>
